@@ -16,3 +16,8 @@ jar -uvf charles.jar com/xk72/charles/gui/transaction/popups/TransactionViewerPo
 
 # openjdk11.0.17 下载地址
 <https://learn.microsoft.com/zh-cn/java/openjdk/download>
+
+# 相关文档
+<https://www.cnblogs.com/Baylor-Chen/p/14963207.html>
+<br>
+<https://www.jianshu.com/p/633c346f071b>
