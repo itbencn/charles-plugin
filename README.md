@@ -24,10 +24,13 @@ jar -uvf charles.jar com/xk72/charles/gui/transaction/popups/TransactionViewerPo
 
 # openjdk11.0.17 下载地址
 必须和charles的java构建版本一致
+<br>
 <https://learn.microsoft.com/zh-cn/java/openjdk/download>
 
 # jadx分析工具
 <https://github.com/skylot/jadx>
 # jd-ui分析工具
 <https://jd-gui.apponic.com/>
+# MT管理器
+<https://binmt.lanzoui.com/b01bivkzc>
 
