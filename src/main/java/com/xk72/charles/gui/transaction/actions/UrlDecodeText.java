@@ -2,19 +2,20 @@ package com.xk72.charles.gui.transaction.actions;
 
 import java.awt.*;
 
-public class CopyHexToClipboardText extends CopyHexToClipboardAction {
+public class UrlDecodeText extends UrlDecode {
     private final String text;
 
-    public CopyHexToClipboardText(String str) {
+    public UrlDecodeText(String str) {
         super(null);
         this.text = str;
     }
 
-    public CopyHexToClipboardText(String str, Component component) {
+    public UrlDecodeText(String str, Component component) {
         super(component);
         this.text = str;
     }
 
+    @Override
     protected String getBody() {
         return this.text;
     }

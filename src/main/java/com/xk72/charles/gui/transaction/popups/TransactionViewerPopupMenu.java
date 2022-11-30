@@ -2,6 +2,7 @@ package com.xk72.charles.gui.transaction.popups;
 
 import com.xk72.charles.gui.session.popups.TransactionPopupMenu;
 import com.xk72.charles.gui.transaction.actions.*;
+
 import com.xk72.charles.model.Transaction;
 
 import java.awt.Component;
@@ -28,15 +29,14 @@ public class TransactionViewerPopupMenu extends TransactionPopupMenu {
                 add(new CopyToClipboardAction$Text(valueAt.toString()));
                 if (valueAt instanceof String) {
                     add(new Base64DecodeAction$Text((String) valueAt, component));
-                } else {
-                    add(new CopyHexToClipboardText((String) valueAt, component));
                 }
+                add(new UrlDecodeText((String) valueAt, component));
                 addSeparator();
             }
         } else if (component instanceof JTextComponent) {
             add(new CopyToClipboardAction$TextComponent((JTextComponent) component));
             add(new Base64DecodeAction$TextComponent((JTextComponent) component));
-            add(new CopyHexToClipboardTextComponent((JTextComponent) component));
+            add(new UrlDecodeTextComponent((JTextComponent) component));
             addSeparator();
         }
         super.prepare(false);

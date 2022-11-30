@@ -12,6 +12,7 @@ jar -uvf charles.jar com/xk72/charles/gui/transaction/actions/CopyHexToClipboard
 jar -uvf charles.jar com/xk72/charles/gui/transaction/actions/CopyHexToClipboardText.class
 jar -uvf charles.jar com/xk72/charles/gui/transaction/actions/CopyHexToClipboardTextComponent.class
 jar -uvf charles.jar com/xk72/charles/gui/transaction/popups/TransactionViewerPopupMenu.class
+//注意class文件路径必须和java软件包路径一致 否则替换后无法生效
 ```
 
 # openjdk11.0.17 下载地址
